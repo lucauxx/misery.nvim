@@ -1,6 +1,6 @@
 local M = {}
 
-M.styles_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }
+M.styles_list = { 'otis_forest', 'doom', 'gruvbox', 'berry', 'matcha_sea', 'matcha_azul', 'matcha_aliz'}
 
 ---Change misery option (vim.g.misery_config.option)
 ---It can't be changed directly by modifing that field due to a Neovim lua bug with global variables (misery_config is a global variable)
@@ -43,7 +43,7 @@ end
 
 local default_config = {
     -- Main options --
-    style = 'dark',    -- choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    style = 'doom',    -- choose between 'otis_forest', 'doom', 'gruvbox', 'berry', 'matcha_sea', 'matcha_aliz'
     toggle_style_key = nil,
     toggle_style_list = M.styles_list,
     transparent = false,     -- don't set background
